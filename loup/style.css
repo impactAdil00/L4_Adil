@@ -130,9 +130,9 @@ h2 { margin-bottom: 0; font-size: clamp(40px, 4.7vw, 60px); line-height: 1.08; }
 .reading-copy { max-width: 470px; }
 .reading-copy h2 { margin-bottom: 18px; }
 .reading-copy > p:not(.eyebrow) { color: var(--muted); font-size: 12px; line-height: 1.9; }
-.observation { margin: 24px 0 14px; padding: 14px 17px; border-left: 2px solid var(--lichen); background: #f2f2e9; }
-.observation-label { display: block; margin-bottom: 6px; color: var(--forest); font-size: 8px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
-.observation p { margin: 0; color: #59634f; font-family: var(--serif); font-size: 14px; line-height: 1.55; }
+.wolf-note { margin: 24px 0 14px; padding: 14px 17px; border-left: 2px solid var(--lichen); background: #f2f2e9; }
+.wolf-note-label { display: block; margin-bottom: 6px; color: var(--forest); font-size: 8px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.wolf-note p { margin: 0; color: #59634f; font-family: var(--serif); font-size: 14px; line-height: 1.55; }
 .outline-button { min-height: 42px; padding-left: 13px; }
 .outline-button span { width: 39px; height: 40px; }
 

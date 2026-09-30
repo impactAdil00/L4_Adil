@@ -21,24 +21,24 @@ if (factButton && wolfFact) {
 	});
 }
 
-const observationButton = document.querySelector('#observation-button');
-const observationText = document.querySelector('#observation-text');
-const observations = [
-	'Un grand territoire ne signifie pas qu’un loup s’y déplace de façon uniforme : ses passages dépendent de ses besoins et des saisons.',
-	'Le loup évite généralement les humains; l’observer dans la nature demande patience et distance.',
-	'La présence du loup et les moyens de cohabitation varient selon les régions : les informations locales sont essentielles.'
+const wolfNoteButton = document.querySelector('#wolf-note-button');
+const wolfNoteText = document.querySelector('#wolf-note-text');
+const wolfNotes = [
+	'Les loups peuvent parcourir de longues distances pour trouver de la nourriture et explorer leur territoire.',
+	'Les louveteaux naissent généralement au printemps, après une gestation d’environ deux mois.',
+	'Le régime du loup varie selon les proies présentes et les saisons.'
 ];
-let previousObservation = 0;
+let previousWolfNote = 0;
 
-if (observationButton && observationText) {
-	observationButton.addEventListener('click', () => {
-		let nextObservation = Math.floor(Math.random() * observations.length);
+if (wolfNoteButton && wolfNoteText) {
+	wolfNoteButton.addEventListener('click', () => {
+		let nextWolfNote = Math.floor(Math.random() * wolfNotes.length);
 
-		while (observations.length > 1 && nextObservation === previousObservation) {
-			nextObservation = Math.floor(Math.random() * observations.length);
+		while (wolfNotes.length > 1 && nextWolfNote === previousWolfNote) {
+			nextWolfNote = Math.floor(Math.random() * wolfNotes.length);
 		}
 
-		previousObservation = nextObservation;
-		observationText.textContent = observations[nextObservation];
+		previousWolfNote = nextWolfNote;
+		wolfNoteText.textContent = wolfNotes[nextWolfNote];
 	});
 }
